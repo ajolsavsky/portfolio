@@ -1,0 +1,149 @@
+/* Universal selector */
+
+* {
+    margin:0;
+    padding:0;
+}
+
+body {
+    position: relative;
+    font-family: "Goudy Bookletter 1911", sans-serif;
+    font-size: 20px;
+    background-color: white;
+    color: #4F4846;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: flex-start;
+  }
+
+  header {
+    background-color: navy;
+    padding: 20px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    
+    /* position: relative; */
+  }
+
+  header h1 {
+      /* background: rgb(96, 96, 229); */
+      padding: 10px;
+      padding-left: 40px;
+      /* position: absolute; */
+      /* display: block; */
+      font-family: 'Nothing You Could Do', cursive;
+      font-size: 3em;
+      color: #070b38;
+      margin-left: -20px;
+    }
+
+  nav {
+      /* background-color: #070b38; */
+      justify-content: end;
+  }
+
+  nav a {
+      color: white;
+      text-decoration: none;
+      padding: 14px 20px;
+      text-align: center;
+      justify-content: end;
+  }
+
+  nav a:hover {
+    color: #070b38;
+}
+
+  main {
+      padding: 10px 10% 10px 10%;
+  }
+
+  section {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin 0px 20px 2px 20px;
+  }
+
+  section h3 {
+      width: 100%;
+      height: 2.2em;
+      font-family: 'Nothing You Could Do', cursive;
+      font-size: 1.5em;
+      align-items: flex-end;
+      justify-content: flex-end;
+      order: 1;
+      background-color: #195877;
+      color: white;
+      border-radius: 10px 10px 0 0;
+      padding: 20px;
+  }
+
+  section h3:hover {
+    background-color: #69b4c7;
+    color: white;
+}
+
+/* section div {
+    
+    order: 3;
+} */
+
+  section p {
+    text-align: justify;
+    text-justify: inter-word;
+    order: 4;
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    margin 20px;
+    border-bottom: 10px solid #69b4c7;
+  }
+
+  section img {
+      width: 200px;
+      height: 200px;
+      margin-right: 25px;
+      order: 2;
+      align-items: flex-start;
+      float: left;
+  }
+
+  section img:hover {
+    opacity: 0.5;
+}
+
+  footer {
+    padding: 20px;
+  }
+
+  footer h4 {
+      color: white;
+      text-align: center;
+      font-size: .75em;
+      display: flex;
+      justify-content:flex-start;
+  }
+
+  .image {
+      background-image:url(../images/headerbackground2.jpg);
+      background-size:cover;
+  }
+
+  .imagereverse {
+    background-image:url(../images/headerbackground2.jpg);
+    background-size:cover;
+    /* transform: scaleX(-1); */
+}
+
+
+
+  .aboutme, .work, .contactme {
+      padding-bottom: 20px;
+  }
+
+  .clip-circle {
+    clip-path: circle(100px at center);
+  }
