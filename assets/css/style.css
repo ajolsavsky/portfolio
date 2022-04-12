@@ -5,6 +5,8 @@
     padding:0;
 }
 
+/* Element selectors */
+
 body {
     position: relative;
     font-family: 'Montserrat', sans-serif;
@@ -24,16 +26,11 @@ body {
     height: auto;
     display: flex;
     justify-content: space-between;
-    
-    /* position: relative; */
   }
 
   header h1 {
-      /* background: rgb(96, 96, 229); */
       padding: 10px;
       padding-left: 40px;
-      /* position: absolute; */
-      /* display: block; */
       font-family: 'Nothing You Could Do', cursive;
       font-size: 3em;
       color: #070b38;
@@ -42,7 +39,6 @@ body {
     }
 
   nav {
-      /* background-color: #070b38; */
       justify-content: end;
   }
 
@@ -145,39 +141,7 @@ body {
       float: left;
   }
 
-  .hero {
-    background-image: url(../images/headerbackground.jpg);
-    background-size: contain;
-    width: 100%;
-    height: 400px;
-  }
-
-  .portfolio {
-    background-size: cover;
-    width: 50%;
-    height: 300px;
-    align-items: center;
-    float: left;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 0;
-  }
-
-  #project1 {
-    background-image: url(../images/headerbackground.jpg);
-  }
-
-  #project2 {
-    background-image: url(../images/headerbackground2.jpg);
-  }
-
-  #project3 {
-    background-image: url(../images/headshot.jpg);
-  }
-
-  #project4 {
-    background-image: url(../images/headshot.jpg);
-  }
+  
 
   section img:hover {
     opacity: 0.5;
@@ -194,6 +158,9 @@ body {
       display: flex;
       justify-content:flex-end;
   }
+
+/* Classes */
+
 
   .image {
       background-image:url(../images/headerbackground2.jpg);
@@ -214,19 +181,39 @@ body {
     clip-path: circle(100px at center);
   }
 
-  /* .portfolio {
-    width: 200px;
-    height: 200px;
-    margin-right: 40px;
-    order: 2;
-    align-items: flex-start;
-    float: left;
-} */
+  .hero {
+    background-image: url(../images/portfolio/accessibilityrefactor.png);
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+  }
 
-/* .portfoliohero {
-  width: 100%;
-  height: 400px;
-  background-image: background-image:url(../im);
-  background-size: cover;
-  border: 1px solid red;
-} */
+  .portfolio {
+    background-size: cover;
+    width: 50%;
+    height: 300px;
+    align-items: center;
+    float: left;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: 0;
+  }
+
+
+/* IDs */
+
+  #project1 {
+    background-image: url(../images/portfolio/landingpage.png);
+  }
+
+  #project2 {
+    background-image: url(../images/portfolio/csscheatsheet.png);
+  }
+
+  #project3 {
+    background-image: url(../images/headerbackground.jpg);
+  }
+
+  #project4 {
+    background-image: url(../images/headerbackground.jpg);
+  }
