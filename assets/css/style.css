@@ -1,219 +1,212 @@
 /* Universal selector */
 
 * {
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 }
 
-/* Element selectors */
+/* Body styles */
 
 body {
     position: relative;
     font-family: 'Montserrat', sans-serif;
     font-size: 1em;
-    background-color: white;
     color: #4F4846;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    justify-content: flex-start;
     line-height: 1.25;
-  }
+}
 
-  header {
-    background-color: navy;
-    padding: 20px;
+main {
+    padding: 10px 0 10px 10%;
+    background-color: #789096;
+}
+
+h2 {
+    width: auto;
     height: auto;
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 1.5em;
+    background-color: #195877;
+    color: white;
+    border-radius: 10px 10px 0 0;
+    padding: 10px;
+    margin-left: 10px;
+    margin-bottom: -10px;
+    z-index: 2;
+    display: inline-block;
+}
+
+/* Header styles */
+
+header {
     display: flex;
     justify-content: space-between;
-  }
-
-  header h1 {
-      padding: 10px;
-      padding-left: 40px;
-      font-family: 'Nothing You Could Do', cursive;
-      font-size: 3em;
-      color: #070b38;
-      margin-left: -20px;
-      filter: drop-shadow(5px 5px 1px #69b4c7);
-    }
-
-  nav {
-      justify-content: end;
-  }
-
-  nav a {
-      color: white;
-      text-decoration: none;
-      padding: 14px 20px;
-      text-align: center;
-      justify-content: end;
-  }
-
-  nav a:hover {
-    color: #070b38;
-}
-
-  main {
-      padding: 10px 10% 10px 10%;
-      background-color: #789096;
-  }
-
-  section {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      /* margin: 0 20px 2px 20px; */
-  }
-
-  section h3 {
-      width: auto;
-      height: auto;
-      font-family: 'Nothing You Could Do', cursive;
-      font-size: 1.5em;
-      align-items: flex-end;
-      justify-content: flex-end;
-      order: 1;
-      background-color: #195877;
-      color: white;
-      border-radius: 10px 10px 0 0;
-      padding: 10px;
-      margin-left: 10px;
-      margin-bottom: -10px;
-      z-index: 1;
-  }
-
-  section h3:hover {
-    background-color: #3c565c;
-    color: white;
-}
-
-  section ul {
-    order: 2;
-    padding: 20px;
-    line-height: 2.5;
-    display: flex;
-    flex-direction: column;
-    list-style: circle;
-    padding-left: 50px;
     flex-wrap: wrap;
-    background-color: white;
-    width: 100%;
-    border-bottom: 10px solid #447683;
-    border-right: 10px solid #69b4c7;
-  }
+    align-items: center;
+}
 
-  section a {
-    color: #195877;
-    text-decoration: underline;
-    /* padding: 14px 20px; */
-    text-align: center;
-    font-weight: bold;
-  }
+header h1 {
+    padding: 20px;
+    /* padding-left: 80px; */
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 3em;
+    color: #070b38;
+    margin-left: 20px;
+    filter: drop-shadow(5px 5px 1px #69b4c7);
+}
 
-  section a:hover {
-    color: #69b4c7;
-  }
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-right: 20px;
+}
 
-  section ul a {
-    padding: 14px 20px;
+nav li {
+    padding: 10px;
+}
 
-  }
+nav a {
+    color: white;
+    text-decoration: none;
+}
 
-  section p {
+.headerimage {
+    background-image: url(../images/headerbackground2.jpg);
+    background-size: cover;
+}
+
+/* About me styles */
+
+.aboutmebox {
+    display: flex;
+    flex-direction: row;
     text-align: left;
     text-justify: inter-word;
-    order: 4;
-    width: 100%;
     background-color: white;
     padding: 20px;
-    /* margin: 20px; */
     border-bottom: 10px solid #447683;
     border-right: 10px solid #69b4c7;
-  }
-
-  section img, .headshot {
-      width: 200px;
-      height: 200px;
-      margin-right: 25px;
-      order: 2;
-      align-items: flex-start;
-      float: left;
-  }
-
-  
-
-  section img:hover {
-    opacity: 0.5;
+    width: 90%;
+    margin-bottom: 20px;
+    justify-content: space-around;
 }
 
-  footer {
-    padding: 20px;
-  }
-
-  footer h4 {
-      color: white;
-      text-align: center;
-      font-size: .75em;
-      display: flex;
-      justify-content:flex-end;
-  }
-
-/* Classes */
-
-
-  .image {
-      background-image:url(../images/headerbackground2.jpg);
-      background-size:cover;
-  }
-
-  .imagereverse {
-    background-image:url(../images/headerbackground2.jpg);
-    background-size:cover;
-    /* transform: scaleX(-1); */
-}
-
-  .aboutme, .work, .contactme {
-      padding-bottom: 20px;
-  }
-
-  .clip-circle {
+.clip-circle {
     clip-path: circle(100px at center);
-  }
+    width: 200px;
+    height: 200px;
+    margin-right: 3rem;
+    /* align-items: flex-start; */
+}
 
-  .hero {
+/* Work class styles */
+
+.workbox {
+    /* display: flex; */
+    flex-direction: row;
+    text-align: left;
+    text-justify: inter-word;
+    background-color: white;
+    padding: 20px;
+    border-bottom: 10px solid #447683;
+    border-right: 10px solid #69b4c7;
+    width: 90%;
+}
+
+.hero {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.hero {
     background-image: url(../images/portfolio/accessibilityrefactor.png);
     background-size: cover;
     width: 100%;
     height: 400px;
-  }
+    margin-bottom: 10px;
+}
 
-  .portfolio {
-    background-size: cover;
-    width: 50%;
-    height: 300px;
-    align-items: center;
-    float: left;
-    flex-wrap: wrap;
+.portfolio {
+    display: flex;
     justify-content: space-between;
-    margin-right: 0;
-  }
+}
 
+.portfolioimage {
+    background-size: cover;
+    width: 99%;
+    height: 300px;
+}
 
-/* IDs */
-
-  #project1 {
-    background-image: url(../images/portfolio/landingpage.png);
-  }
-
-  #project2 {
+#csscheatsheet {
     background-image: url(../images/portfolio/csscheatsheet.png);
-  }
+}
 
-  #project3 {
-    background-image: url(../images/headerbackground.jpg);
-  }
+#landingpage {
+    background-image: url(../images/portfolio/landingpage.png);
+}
 
-  #project4 {
-    background-image: url(../images/headerbackground.jpg);
-  }
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.containerflex {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.caption {
+    color: navy;
+    background-color: yellowgreen;
+    padding: 20px;
+    width: fit-content;
+    margin-top: -80px;
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    color: navy;
+    background-color: yellowgreen;
+    padding: 20px;
+}
+
+/* Contact Me class styles */
+
+.contactmebox {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    text-justify: inter-word;
+    background-color: white;
+    padding: 20px;
+    border-bottom: 10px solid #447683;
+    border-right: 10px solid #69b4c7;
+    width: 90%;
+    margin-bottom: 20px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* Footer styles */
+
+footer {
+    padding: 10px;
+    background-image:url(../images/headerbackground2.jpg);
+    background-size: cover;
+}
+
+footer h4 {
+    color: white;
+    font-size: .75em;
+    display: flex;
+    justify-content: flex-end;
+}
+

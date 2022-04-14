@@ -1,66 +1,95 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Alexandra Olsavsky - Portfolio</title>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">   
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Nothing+You+Could+Do&display=swap" rel="stylesheet">   
-        <link rel="stylesheet" type="text/css" href="./assets/css/reset.css" />
-        <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
-    </head>
-    <body>
+<html lang="en">
 
-        <!-- Header -->
-        <header class="image">
-            <h1>Alexandra Olsavsky</h1>
-            <nav>
-                <a href="#aboutme">About Me</a>
-                <a href="#work">Work</a>
-                <a href="#contactme">Contact Me</a>
-            </nav>
-        </header>
-        <main>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexandra Olsavsky - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Nothing+You+Could+Do&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
 
-            <!-- About Me -->
-            <section class="aboutme" id="aboutme">
-                <h3>About Me</h3>
-                <p>
-                    <img src="./assets/images/headshot.jpg" class="clip-circle" alt="smiling photo of Alex - female with curly hair class="headshot">
-                    Hi there! I'm <b>Alexandra Olsavsky</b>. Since you've made it this far, you can call me Alex. I am a full-stack engineer (in training) at Northwestern University. I am also a <a href="https://www.alexandraolsavsky.com/" target="_blank">professional singer and composer</a>, so you might have seen me around those parts as well.<br><br>
-                    I love collaborating with small- and large- scale companies to achieve results that are functional, efficient, and downright beautiful. I look forward to connecting with you!
-                </p> 
-            </section>
+<body>
+    <!-- Header and Navigation -->
+    <header class="headerimage">
+        <h1>Alex Olsavsky</h1>
+        <nav>
+            <ul>
+                <li><a href="#aboutme">About Me</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contactme">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
 
-            <!-- Portfolio -->
-            <section class="work" id="work">
-               <h3>Work</h3>
-               <p>
-                <a href="https://ajolsavsky.github.io/accessibility-refactoring/" target="_blank"><img class="hero"></a>
-               <a href="https://ajolsavsky.github.io/landingpage/" target="_blank"><img class="portfolio" id="project1" /></a>
-               <a href="https://ajolsavsky.github.io/css-cheatsheet/" target="_blank"><img class="portfolio" id="project2" /></a>
+    <!-- About Me -->
+    <main>
+        <h2 id="aboutme">About Me</h2>
+        <section class="aboutmebox">
+            <p>
+            <div>
+                <img src="./assets/images/headshot.jpg" class="clip-circle"
+                    alt="smiling photo of Alex - female with curly hair" />
+            </div>
+            <div>
+                Hi there! I'm Alex. I am a full-stack engineer (in training) at Northwestern University. I am also a <a
+                    href="https://www.alexandraolsavsky.com/" target="_blank">professional singer and composer</a>, so
+                you might have seen me around those parts as well.<br><br>
+                I love collaborating with small- and large- scale companies to achieve results that are functional,
+                efficient, and downright beautiful. I look forward to connecting with you!
+            </div>
             </p>
-            </section>
+        </section>
 
-            <!-- Contact -->
-            <section class="contactme" id="contactme">
-                <h3>Contact Me</h3>
-                        <ul>
-                            <li>Email: <a href="malito:alexandraolsavsky@gmail.com">alexandraolsavsky@gmail.com</a></li>
-                            <li>Phone: <a href="tel:3605136634">360.513.6634</a></li>
-                            <li>GitHub: <a href="https://github.com/ajolsavsky" target="_blank">GitHub</a></li>
-                        </ul>
-            </section>
+        <!-- Work -->
+        <h2 id="work">Work</h2>
+        <section class="workbox">
+            <div class="container">
+                <img class="hero" />
+                <div class="bottom-left">
+                    <caption>Accessibility refactor</caption>
+                </div>
+            </div>
+            <div class="portfolio">
+                <div class="containerflex">
+                    <img class="portfolioimage" id="csscheatsheet" />
+                    <div class="caption">
+                        <caption>CSS cheatsheet</caption>
+                    </div>
+                </div>
+                <div class="containerflex">
+                    <img class="portfolioimage" id="landingpage" />
+                    <div class="caption">
+                        <caption>Landing Page</caption>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        </main>
+        <!-- Contact Me -->
+        <h2 id="contactme">Contact Me</h2>
+        <section class="contactmebox">
+            <div>Email: <a href="malito:alexandraolsavsky@gmail.com">alexandraolsavsky@gmail.com</a></div>
+            <div>Phone: <a href="tel:3605136634">360.513.6634</a></div>
+            <div>GitHub: <a href="https://github.com/ajolsavsky" target="_blank">GitHub</a></div>
+        </section>
+    </main>
 
-        <!-- Footer -->
-        <footer class="imagereverse">
-            <h4>© AJ Olsavsky Designs 2022</h4>
+    <!-- Footer -->
+    <footer>
+        <footer>
+            <h4>© Alexandra Olsavsky Designs 2022</h4>
         </footer>
-    </body>
+    </footer>
+
+</body>
+
 </html>
