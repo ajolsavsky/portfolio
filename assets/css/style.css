@@ -17,7 +17,7 @@ body {
 
 main {
     padding: 10px 0 10px 10%;
-    background-color: #789096;
+    background-color: #60a4b4;
 }
 
 h2 {
@@ -46,7 +46,6 @@ header {
 
 header h1 {
     padding: 20px;
-    /* padding-left: 80px; */
     font-family: 'Nothing You Could Do', cursive;
     font-size: 3em;
     color: #070b38;
@@ -66,8 +65,12 @@ nav li {
 }
 
 nav a {
-    color: white;
+    color: #070b38;
     text-decoration: none;
+}
+
+nav a:hover {
+    color: white;
 }
 
 .headerimage {
@@ -91,18 +94,24 @@ nav a {
     justify-content: space-around;
 }
 
+.aboutmebox a {
+    color: #195877;
+}
+
+.aboutmebox a:hover {
+    color: #69b4c7;
+}
+
 .clip-circle {
     clip-path: circle(100px at center);
     width: 200px;
     height: 200px;
     margin-right: 3rem;
-    /* align-items: flex-start; */
 }
 
 /* Work class styles */
 
 .workbox {
-    /* display: flex; */
     flex-direction: row;
     text-align: left;
     text-justify: inter-word;
@@ -111,6 +120,7 @@ nav a {
     border-bottom: 10px solid #447683;
     border-right: 10px solid #69b4c7;
     width: 90%;
+    margin-bottom: 20px;
 }
 
 .hero {
@@ -134,10 +144,16 @@ nav a {
     justify-content: space-between;
 }
 
+
 .portfolioimage {
     background-size: cover;
     width: 99%;
     height: 300px;
+}
+
+.workbox img:hover {
+    opacity: .5;
+    background-color: #070b38;
 }
 
 #csscheatsheet {
@@ -162,19 +178,21 @@ nav a {
 }
 
 .caption {
-    color: navy;
-    background-color: yellowgreen;
+    color: white;
+    background-color: #69b4c7;
     padding: 20px;
     width: fit-content;
     margin-top: -80px;
+    z-index: 1;
 }
 
 .bottom-left {
     position: absolute;
     bottom: 20px;
     left: 0;
-    color: navy;
-    background-color: yellowgreen;
+    color: white;
+    font-weight: bold;
+    background-color: #69b4c7;
     padding: 20px;
 }
 
@@ -195,6 +213,15 @@ nav a {
     flex-wrap: wrap;
 }
 
+.contactmebox a {
+    color: #195877;
+}
+
+.contactmebox a:hover {
+    color: #69b4c7;
+}
+
+
 /* Footer styles */
 
 footer {
@@ -210,3 +237,40 @@ footer h4 {
     justify-content: flex-end;
 }
 
+/* Media queries */
+
+@media screen and (max-width: 899px) {
+    .aboutmebox {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    header {
+        display: block;
+        text-align: center;
+    }
+    
+    nav ul {
+        justify-content: center;
+    }
+
+    .portfolio {
+        display: block;
+    }
+
+    .contactmebox {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+}
+
+
+@media screen and (min-width: 661px) {
+
+    
+}
