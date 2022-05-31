@@ -35,6 +35,15 @@ h2 {
     display: inline-block;
 }
 
+a {
+    color: #070b38;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+}
+
 /* Header styles */
 
 header {
@@ -132,7 +141,7 @@ nav a:hover {
 }
 
 .hero {
-    background-image: url(../images/portfolio/accessibilityrefactor.png);
+    background-image: url(../images/portfolio/looapp.png);
     background-size: cover;
     width: 100%;
     height: 400px;
@@ -162,6 +171,14 @@ nav a:hover {
 
 #landingpage {
     background-image: url(../images/portfolio/landingpage.png);
+}
+
+#weatherdashboard {
+    background-image: url(../images/portfolio/weatherdashboard.png);
+}
+
+#dayplanner {
+    background-image: url(../images/portfolio/dayplanner.png);
 }
 
 .container {
@@ -194,6 +211,10 @@ nav a:hover {
     font-weight: bold;
     background-color: #69b4c7;
     padding: 20px;
+}
+
+.align-left {
+    text-align: left;
 }
 
 /* Contact Me class styles */
